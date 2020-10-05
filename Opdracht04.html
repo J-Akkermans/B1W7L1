@@ -16,46 +16,26 @@
         //SpaceShip library inladen
         var spaceShip = new SpaceShip(document.getElementById('container'));
         //Level inladen
-        spaceShip.loadLevel(9);
+        spaceShip.loadLevel(4);
         //Eigen acties
         spaceShip.run(function () {
             // code  start
-            spaceShip.rotateRight();
-<<<<<<< Updated upstream:Opdracht09.html
+        for(var x = 0; x <=2; x++){
+            spaceShip.rotateLeft();
             spaceShip.moveForward();
-            for (x = 0; x <= 2; x++) {
-                for (y = 0; y <= 2; y++) {
-                    spaceShip.moveForward();
-                }
-                spaceShip.rotateRight();
-                spaceShip.moveForward();
-                spaceShip.rotateRight();
-                for (z = 0; z <= 2; z++) {
-                    spaceShip.moveForward();
-                }
-                spaceShip.rotateLeft();
-                spaceShip.moveForward();
-                spaceShip.rotateLeft();
-            }
-
-
-=======
-            for(var i = 0; i < 4; i++){
+            spaceShip.rotateLeft();
+            for(var y = 0; y <= 6; y++){
                 spaceShip.moveForward();
             }
             spaceShip.rotateRight();
-            for(var i = 0; i < 2; i++){
-                spaceShip.moveForward();
-                spaceShip.rotateRight();
-                spaceShip.rotateLeft();
+            spaceShip.moveForward();
+            spaceShip.rotateRight();
+            for(var z = 0; z <= 6; z++){
                 spaceShip.moveForward();
             }
+        }
 
-            
-            // for(var i = 0; i < 3; i++){
-            //     spaceShip.moveForward();
-            // }
->>>>>>> Stashed changes:Opdracht09_TODO.html
+
             // code  einde
         });
     </script>
